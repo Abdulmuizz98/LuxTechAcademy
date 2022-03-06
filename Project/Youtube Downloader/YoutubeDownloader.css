@@ -2,9 +2,13 @@
     --font-size: 1.3rem;
     --mono: 'Oxygen Mono', monospace;
     --serif: 'Oxygen', sans-serif;
+    --black: #044040;
+    --white: #F2F2F2;
+    --mag: #8C1F28;
+    --wine: #591C21;
+    --red: #D92525;
+    --gradient: linear-gradient(90deg, rgba(217,37,37,1) 0%, rgba(4,64,64,1) 100%);
 }
-
-
 *,
 *::before,
 *::after{
@@ -14,10 +18,158 @@ body{
     margin: 0;
     padding: 0;
     font-size: var(--font-size);
+    background-color: var(--black);
+    font-family:var(--serif);
 }
-
-
 
 .button{
     font-family: var(--mono);
+    padding: 0.5rem;
+    background-color: var(--black);
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--white)
 }
+main{
+    background-color: var(--white);
+}
+.gradient{
+    height: 0.5rem;
+    width: 100vw;
+    background: var(--gradient);
+}
+
+/*----Download Section -------*/
+
+.section-download{
+    position: relative;
+    height: 30vw;
+    background-color: var(--mag);
+}
+#download{
+    position: absolute;
+    width: 75vw;
+    text-align: center;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+}
+#download #vid-url{
+    height: 2rem;
+    width: 50vw;
+    font-size: 120%;
+    font-family: var(--mono);
+    
+}
+#download #vid-url:focus{
+    color: var(--white);
+    background-color: var(--black);
+}
+
+/*----------Header Section ------------*/
+
+#header{
+    /* margin-bottom: 8.33333vw; */
+    font-family: var(--mono);
+    font-size: 70%;
+    color: var(--white);
+    padding: 4vw 8.3333vw;
+    font-weight: bolder;
+}
+#header h1{
+    display: inline-block;
+}
+#header h1:hover{
+    color: var(--red);
+    cursor: pointer;
+}
+
+/*-----------Banner Section ----------*/
+
+.section-banner{
+    padding: 0 8.33333vw;
+}
+#banner{
+    height:40vw;
+    background: url('./img/yout.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;    
+}
+
+/*---------Collage Section ---------*/
+.section-collage{
+
+}
+
+#collage{
+    position: relative;
+}
+#collage .collage-first-img{
+    position: relative;
+    margin: 8.33333vw 0 8.33333vw 8.33333vw;
+    background: url('./img/yout3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: inline-block;
+    vertical-align: middle;
+    height: 41.66667vw;
+    width: 41.66667vw;
+    z-index: 1;
+}
+#collage .collage-second-img{
+    position: relative;
+    margin-left: 8.33333vw;
+    background: url('./img/yout2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: inline-block;
+    vertical-align: middle;
+    width: 33.33333vw;
+    height: 25vw;
+    z-index: 1;
+}
+#collage .collage-solid-color{
+    position: absolute;
+    background: url('./img/yout1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: inline-block;
+    vertical-align: middle;
+    opacity: 0.3;
+    top: 0;
+    left: 41.66667vw;
+    width: 58.33333vw;
+    height: 58.33333vw;
+    z-index: 0;
+
+}
+
+
+/*---------Footer Section-----------*/
+/* 
+.section-footer{
+
+} */
+#footer{
+    /* width: 500px; */
+    margin: 0 auto;
+    text-align: center;
+    padding: 3rem 8.33333vw;
+    color: var(--white);
+}
+#footer ul{
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    justify-content: center;
+    color: var(--red);
+}
+
