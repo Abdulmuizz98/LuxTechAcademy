@@ -1,0 +1,23 @@
+:root{
+    --font-size: 1.3rem;
+    --mono: 'Oxygen Mono', monospace;
+    --serif: 'Oxygen', sans-serif;
+}
+
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: var(--font-size);
+}
+
+
+
+.button{
+    font-family: var(--mono);
+}
